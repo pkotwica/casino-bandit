@@ -1,0 +1,119 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ background-color: rgb(221, 212, 212);
+}
+
+.wrap {
+ width: 60%;
+ margin: 0 auto;
+ font-family: 'open sans', roboto, sans-serif; 
+ background-color: gray;
+
+}
+
+
+
+h1 {
+ text-align: center;
+ text-transform: uppercase;
+ font-size: 80px;
+ color: red;
+ background-color: gray;
+ 
+}
+.game {
+ display: flex;
+ margin-bottom: 3vh;
+ background-color: gray;
+
+}
+.color {
+ height: 25vh;
+ flex-grow: 1;
+ margin: 2px;
+ background-size: contain;
+ background-repeat: no-repeat;
+ background-position: center;
+border: 3px solid rgb(201, 192, 192);
+}
+
+.play {
+ text-align: center;
+ background-color: gray;
+}
+
+.play input{
+ height: 90px;
+ font-size: 40px;
+ padding: 20px;
+ margin-left: 20px;
+ margin-right: 50%;
+ width: 160px;
+ border: 3px solid rgb(226, 219, 219);
+ background: rgb(28, 48, 48);
+ color: firebrick;
+ text-align: center;
+}
+.play button {
+ width: 20%;
+ height:90px;
+ text-align: center;
+ padding: 20px 10px;
+ font-size: 30px;
+ text-transform: uppercase;
+ background-color: rgb(185, 24, 24);
+ border: none;
+ border-radius: 50%;
+ color: white;
+ cursor: pointer;
+ letter-spacing: 6px;
+}
+
+.panel {
+ margin: 80px 0 40px;
+ font-size: 26px;
+ background-color: gray;
+}
+
+.panel, .score {
+ font-size: 26px;
+ text-align:  center;
+}
+.panel span, .score span {
+ font-weight: bold;
+ margin-left: 20px;
+background-color: rgb(13, 24, 24);
+color: gold;
+padding: 1px 10px;
+border-radius: 2px;
+}
+span .result{
+    width: 60%;
+}
+.score{
+    background-color: gray;
+}
+
+@media (max-width: 1024px) {
+ .wrap {
+ width: 90%;
+ }
+ .play input{
+  height: 70px;
+  font-size: 30px;
+  display: block;
+  margin: 20px auto;
+
+ }
+ .play button {
+  height: 74px;
+  font-size: 30px;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 20px ;
+ }
+
+}
