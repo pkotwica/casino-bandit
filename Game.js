@@ -8,7 +8,7 @@ class Game {
   this.spanWallet = document.querySelector('.panel span.wallet');
   this.boards = [...document.querySelectorAll('div.color')];
   this.inputBid = document.getElementById('bid');
-  this.spanResult = document.querySelector('.score span.result');
+  this.spanResult = document.querySelector('.wrap span.result');
   this.spanGames = document.querySelector('.score span.number');
   this.spanWins = document.querySelector('.score span.win');
   this.spanLosses = document.querySelector('.score span.loss');
@@ -29,9 +29,12 @@ class Game {
 
   this.spanWallet.textContent = money;
   if (result) {
-   result = `Wygrałeś ${wonMoney}$. `;
+   result = `YOU WIN ${wonMoney}$. `;
+  //  document.result.style.Color = "lightgreen";
+
   } else if (!result && result !== "") {
-   result = `Przegrałeś ${bid}$. `
+   result = `YOU LOSE ${bid}$. `;
+  //  document.result.style.Color = "red";
   }
   this.spanResult.textContent = result;
   this.spanGames.textContent = stats[0];
