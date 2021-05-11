@@ -8,7 +8,7 @@ class Game {
   this.spanWallet = document.querySelector('.panel span.wallet');
   this.boards = [...document.querySelectorAll('div.color')];
   this.inputBid = document.getElementById('bid');
-  this.spanResult = document.querySelector('.score span.result');
+  this.spanResult = document.querySelector('.wrap span.result');
   this.spanGames = document.querySelector('.score span.number');
   this.spanWins = document.querySelector('.score span.win');
   this.spanLosses = document.querySelector('.score span.loss');
@@ -17,7 +17,7 @@ class Game {
 
  }
 
- render(colors = ["url(img/orange.jpg)", "url(img/orange.jpg)", "url(img/orange.jpg)", "url(img/orange.jpg)", "url(img/orange.jpg)"], money = this.wallet.getWalletValue(), result = "", stats = [0, 0, 0], bid = 0, wonMoney = 0) {
+ render(colors = ["url(img/orange.jpg)", "url(img/orange.jpg)", "url(img/orange.jpg)", "url(img/orange.jpg)", "url(img/orange.jpg)"], money = this.wallet.getWalletValue(), result = "", stats = [0, 0, 0, 0, 0], bid = 0, wonMoney = 0) {
   // console.log("gramy!!");
 
   this.boards.forEach((board, i) => {
