@@ -30,8 +30,10 @@ class Game {
   this.spanWallet.textContent = money;
   if (result) {
    result = `Wygrałeś ${wonMoney}$. `;
+   this.spanResult.style.color = "lightgreen";
   } else if (!result && result !== "") {
-   result = `Przegrałeś ${bid}$. `
+   result = `Przegrałeś ${bid}$. `;
+   this.spanResult.style.color = "red"
   }
   this.spanResult.textContent = result;
   this.spanGames.textContent = stats[0];
