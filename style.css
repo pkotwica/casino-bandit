@@ -151,5 +151,18 @@ border: #ddd solid 3px;
         
 
     }
+    .play button{
+        font-size: 15px;
+        font-weight: 800;
+    }
+    
+    .panel, .score {
+        font-size: 15px;
+        padding: 30px 0;
+    }
+    .play input{
+        font-size: 20px;
+        
+    }
 
 }
