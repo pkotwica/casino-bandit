@@ -27,8 +27,8 @@ h1 {
 }
 .game {
  display: flex;
- margin-bottom: 3vh;
  background-color: rgb(112, 7, 7);
+ border: 5px solid lightgoldenrodyellow;
 
 }
 .color {
@@ -43,7 +43,8 @@ border: 5px solid lightgoldenrodyellow;
 
 .play {
  text-align: center;
- background-color:lightgoldenrodyellow;
+ background-color:rgb(146, 146, 142);
+ border: 5px solid lightgoldenrodyellow;
 }
 
 .play input{
@@ -66,7 +67,7 @@ border: 5px solid lightgoldenrodyellow;
  padding: 20px 10px;
  font-size: 15px;
  text-transform: uppercase;
- background-color: goldenrod;
+ background-color: rgb(209, 8, 18);
  border: none;
  border-radius: 10px;
  color: white;
@@ -75,13 +76,14 @@ border: 5px solid lightgoldenrodyellow;
 }
 
 .panel, .score{
- margin: 10px 0 10px;
+ padding: 5px 0;
  font-size: 26px;
  background-color: darkred;
  display: flex;
  flex-direction: column;
  justify-content: center;
  align-items: center;
+ border: 5px solid lightgoldenrodyellow;
 }
 
 .panel, .score {
@@ -111,6 +113,7 @@ border: #ddd solid 3px;
     border: cornsilk 2px solid;
     text-transform: uppercase;
     font-size: 30px;
+    border: 5px solid lightgoldenrodyellow;
 
 }
 
