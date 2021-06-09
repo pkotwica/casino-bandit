@@ -45,14 +45,17 @@ border: 5px solid lightgoldenrodyellow;
  text-align: center;
  background-color:rgb(146, 146, 142);
  border: 5px solid lightgoldenrodyellow;
+ padding-bottom: 20px;
 }
 
 .play input{
  height: 60px;
- font-size: 40px;
+ font-size: 30px;
+ font-weight: 600;
  padding: 5px;
  margin-left: 20px;
  margin-right: 50%;
+ margin-top: 25px;
  width: 100px;
  border-radius: 10px;
  border: 3px solid rgb(226, 219, 219);
@@ -61,12 +64,13 @@ border: 5px solid lightgoldenrodyellow;
  text-align: center;
 }
 .play button {
- width: 15%;
+ width: 20%;
  height:60px;
  text-align: center;
- padding: 20px 10px;
- font-size: 15px;
+ padding: 5px 10px;
+ font-size: 25px;
  text-transform: uppercase;
+ font-weight: 900;
  background-color: rgb(209, 8, 18);
  border: none;
  border-radius: 10px;
@@ -74,13 +78,16 @@ border: 5px solid lightgoldenrodyellow;
  cursor: pointer;
  letter-spacing: 4px;
 }
+.play button:hover{
+    background-color: rgb(214, 41, 50);
+}
 
 .panel, .score{
  padding: 5px 0;
  font-size: 26px;
  background-color: darkred;
  display: flex;
- flex-direction: column;
+ flex-direction: row;
  justify-content: center;
  align-items: center;
  border: 5px solid lightgoldenrodyellow;
@@ -95,11 +102,11 @@ border: 5px solid lightgoldenrodyellow;
 }
 .panel span, .score span {
  font-weight: bold;
- margin-left: 20px;
+ margin-right: 20px;
  width: 100px;
 background-color: rgb(22, 34, 16);
 color: gold;
-padding: 1px 10px;
+padding: 1px 20px;
 border-radius: 10px;
 border: #ddd solid 3px;
 }
@@ -109,11 +116,12 @@ border: #ddd solid 3px;
     justify-content: center;
     display: block;
     background-color: black;
-    height: 40px;
+    height: 60px;
     border: cornsilk 2px solid;
     text-transform: uppercase;
     font-size: 30px;
     border: 5px solid lightgoldenrodyellow;
+    
 
 }
 
