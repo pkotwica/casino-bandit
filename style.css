@@ -80,6 +80,10 @@ border: 5px solid lightgoldenrodyellow;
 }
 .play button:hover{
     background-color: rgb(214, 41, 50);
+    
+}
+.play button:active{
+    transform: translateY(5px);
 }
 
 .panel, .score{
