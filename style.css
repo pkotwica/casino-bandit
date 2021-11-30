@@ -2,15 +2,24 @@
  margin: 0;
  padding: 0;
  box-sizing: border-box;
- background-color: rgb(18, 70, 27);
+ 
+
+ 
+}
+body{
+    background:url(https://images.pexels.com/photos/5402908/pexels-photo-5402908.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+ background-repeat: no-repeat;
+ background-size: cover;
 }
 
 .wrap {
- width: 60%;
+ width: 50%;
  margin: 0 auto;
  font-family: 'open sans', roboto, sans-serif; 
- background-color: gold;
- /* display: flex; */
+ background: rgba(146, 143, 140, 0.397);
+ backdrop-filter: blur(3px);
+ 
+
 
 }
 
@@ -20,15 +29,22 @@ h1 {
  text-align: center;
  text-transform: uppercase;
  font-size: 60px;
- color: gold;
- background-color: darkred;
- border: 5px solid lightgoldenrodyellow;
  
+ background: linear-gradient(59deg, rgba(214,208,6,1) 0%, rgba(240,239,220,1) 5%, rgba(237,221,25,1) 10%, rgba(232,230,219,1) 17%, rgba(237,221,25,1) 22%, rgba(228,222,205,1) 30%, rgba(237,221,25,1) 32%, rgba(235,224,208,1) 44%, rgba(237,221,25,1) 47%, rgba(233,220,207,1) 55%, rgba(237,221,25,1) 60%, rgba(233,219,211,1) 66%, rgba(237,221,25,1) 71%, rgba(235,219,214,1) 84%, rgba(237,221,25,1) 88%, rgba(235,221,220,1) 94%, rgba(237,221,25,1) 100%);
+background-size: 300%;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-position: left;
+transition: all 2s ease-in-out;
 }
+h1:hover{
+    background-position: right;
+}
+
 .game {
  display: flex;
- background-color: rgb(112, 7, 7);
- border: 5px solid lightgoldenrodyellow;
+ background: rgba(146, 143, 140, 0.397);
+ backdrop-filter: blur(3px);
 
 }
 .color {
@@ -38,13 +54,12 @@ h1 {
  background-size: contain;
  background-repeat: no-repeat;
  background-position: center;
-border: 5px solid lightgoldenrodyellow;
 }
 
 .play {
  text-align: center;
- background-color:rgb(146, 146, 142);
- border: 5px solid lightgoldenrodyellow;
+ background: rgba(146, 143, 140, 0.397);
+ backdrop-filter: blur(3px);
  padding-bottom: 20px;
 }
 
@@ -58,7 +73,6 @@ border: 5px solid lightgoldenrodyellow;
  margin-top: 25px;
  width: 100px;
  border-radius: 10px;
- border: 3px solid rgb(226, 219, 219);
  background: rgb(28, 48, 48);
  color: gold;
  text-align: center;
@@ -71,30 +85,33 @@ border: 5px solid lightgoldenrodyellow;
  font-size: 25px;
  text-transform: uppercase;
  font-weight: 900;
- background-color: rgb(209, 8, 18);
+ background-color: rgb(160, 21, 28);
  border: none;
  border-radius: 10px;
- color: white;
+ color: rgb(238, 232, 232);
  cursor: pointer;
  letter-spacing: 4px;
+ box-shadow: 5px 5px 0 3px  rgb(114, 16, 21) ;
 }
 .play button:hover{
     background-color: rgb(214, 41, 50);
-    
+    box-shadow: 5px 5px 2px 3px  rgb(160, 21, 28) ;
 }
 .play button:active{
     transform: translateY(5px);
+    box-shadow: 1px 1px 2px 1px  rgb(160, 21, 28) ;
 }
 
 .panel, .score{
  padding: 5px 0;
  font-size: 26px;
- background-color: darkred;
+ background: rgba(146, 143, 140, 0.397);
+ backdrop-filter: blur(3px);
  display: flex;
  flex-direction: row;
  justify-content: center;
  align-items: center;
- border: 5px solid lightgoldenrodyellow;
+
 }
 
 .panel, .score {
@@ -108,24 +125,21 @@ border: 5px solid lightgoldenrodyellow;
  font-weight: bold;
  margin-right: 20px;
  width: 100px;
-background-color: rgb(22, 34, 16);
+background-color: rgb(32, 43, 27);
 color: gold;
 padding: 1px 20px;
 border-radius: 10px;
-border: #ddd solid 3px;
+
 }
 .result{
     width: 100%;
     text-align: center;
     justify-content: center;
     display: block;
-    background-color: black;
+    background-color: rgb(32, 43, 27);;
     height: 60px;
-    border: cornsilk 2px solid;
     text-transform: uppercase;
     font-size: 30px;
-    border: 5px solid lightgoldenrodyellow;
-    
 
 }
 
